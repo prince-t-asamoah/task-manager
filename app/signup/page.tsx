@@ -8,8 +8,8 @@ export default function SignUp() {
     return (
         <div className="h-screen flex">
             <div className="lg:block flex-1 hidden bg-boson-blue"></div>
-            <div className="flex-1 bg-gray-100 flex flex-col gap-4 items-center">
-                <div className="px-5 py-5 w-full">
+            <div className="flex-1 bg-gray-100 flex flex-col gap-4 lg:gap-8 items-center">
+                <div className="p-5 lg:px-10 lg:pt-10 w-full">
                     <Link
                         href="/"
                         className="font-semibold text-boson-blue inline-flex items-center gap-2"
@@ -19,8 +19,8 @@ export default function SignUp() {
                     </Link>
                 </div>
                 <div className="py-4 w-full flex justify-center">
-                    <div className="w-4/5">
-                        <h1 className="text-gray-950 text-xl font-bold text-center py-5">
+                    <div className="w-4/5 lg:w-3/5">
+                        <h1 className="text-gray-950 text-xl lg:text-3xl font-bold text-center py-5 lg:pb-8">
                             Create your account
                         </h1>
                         <form>
