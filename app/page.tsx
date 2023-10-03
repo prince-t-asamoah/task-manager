@@ -22,8 +22,20 @@ export default function Home() {
                     </div>
                 </div>
             </header>
-            <main className="py-12 flex-grow flex justify-center bg-gray-100 relative">
-                <nav className="w-full h-fit px-4 py-2 flex justify-center absolute bottom-0 border-t lg:hidden">
+            <main className="py-12 px-5 lg:px-40 flex-grow bg-gray-100">
+                <div className=" flex justify-between items-center">
+                    <h2 className="text-lepton-lilac">Latest</h2>
+                    <Link
+                        href="/new"
+                        className="text-sm px-4 py-2 text-gray-100 bg-lepton-lilac hover:opacity-70 font-semibold rounded-md lg:flex items-center gap-2 transition-opacity hidden"
+                    >
+                        <CgMathPlus size={20} />
+                        Add task
+                    </Link>
+                </div>
+            </main>
+            <footer className="w-full h-fit px-4 py-2 flex justify-center absolute bottom-0 border-t lg:hidden">
+                <nav>
                     <ul>
                         <Link
                             href="/new"
@@ -34,7 +46,7 @@ export default function Home() {
                         </Link>
                     </ul>
                 </nav>
-            </main>
+            </footer>
         </div>
     );
 }
