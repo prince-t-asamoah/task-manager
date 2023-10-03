@@ -7,5 +7,5 @@
 html,
 body,
 #root {
-    @apply font-sans text-base h-full overflow-auto;
+    @apply font-sans text-base h-full;
 }
