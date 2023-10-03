@@ -1,6 +1,6 @@
 export default function Home() {
     return (
-        <div className="min-h-screen">
+        <div className="min-h-screen flex flex-col">
             <header className="bg-boson-blue pt-8 px-5 lg:px-50 lg:pb-22">
                 <div className="flex flex-col items-center">
                     <h1 className="text-sm lg:text-lg font-bold text-gray-100 text-center pt-8 pb-5 tracking-[12px] lg:tracking-[20px] uppercase lg:py-10">
@@ -15,7 +15,9 @@ export default function Home() {
                     </div>
                 </div>
             </header>
-            <main></main>
+            <main className="py-12 flex-grow flex justify-center bg-gray-100 relative">
+
+            </main>
         </div>
     );
 }
