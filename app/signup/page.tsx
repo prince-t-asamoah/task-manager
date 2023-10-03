@@ -29,37 +29,39 @@ export default function SignUp() {
                             Create your account
                         </h1>
                         <form>
-                            <div className="flex flex-col gap-4">
-                                <Input
-                                    type="text"
-                                    label="First Name"
-                                    placeholder="Enter your first name"
-                                    classNames={inputStyles}
-                                />
-                                <Input
-                                    type="text"
-                                    label="Last Name"
-                                    placeholder="Enter your last name"
-                                    classNames={inputStyles}
-                                />
-                                <Input
-                                    type="email"
-                                    label="Email"
-                                    placeholder="Enter your email"
-                                    classNames={inputStyles}
-                                />
-                                <Input
-                                    type="password"
-                                    label="Password"
-                                    placeholder="Enter your password"
-                                    classNames={inputStyles}
-                                />
-                                <Input
-                                    type="password"
-                                    label="Confirm Password"
-                                    placeholder="Enter your password again"
-                                    classNames={inputStyles}
-                                />
+                            <div className="flex flex-col gap-5">
+                                <div className='flex flex-col gap-4'>
+                                    <Input
+                                        type="text"
+                                        label="First Name"
+                                        placeholder="Enter your first name"
+                                        classNames={inputStyles}
+                                    />
+                                    <Input
+                                        type="text"
+                                        label="Last Name"
+                                        placeholder="Enter your last name"
+                                        classNames={inputStyles}
+                                    />
+                                    <Input
+                                        type="email"
+                                        label="Email"
+                                        placeholder="Enter your email"
+                                        classNames={inputStyles}
+                                    />
+                                    <Input
+                                        type="password"
+                                        label="Password"
+                                        placeholder="Enter your password"
+                                        classNames={inputStyles}
+                                    />
+                                    <Input
+                                        type="password"
+                                        label="Confirm Password"
+                                        placeholder="Enter your password again"
+                                        classNames={inputStyles}
+                                    />
+                                </div>
                                 <Button
                                     size="lg"
                                     radius="sm"
