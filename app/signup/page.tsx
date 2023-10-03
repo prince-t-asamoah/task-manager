@@ -4,6 +4,11 @@ import { FaChevronLeft } from 'react-icons/fa6';
 
 import Link from 'next/link';
 
+const inputStyles = {
+    label: 'lg:text-[0.9375rem] text-gray-950 font-semibold',
+    input: 'lg:text-medium',
+};
+
 export default function SignUp() {
     return (
         <div className="h-screen flex">
@@ -12,7 +17,7 @@ export default function SignUp() {
                 <div className="p-5 lg:px-10 lg:pt-10 w-full">
                     <Link
                         href="/"
-                        className="font-semibold text-boson-blue inline-flex items-center gap-2"
+                        className="font-semibold text-boson-blue lg:hover:underline inline-flex items-center gap-2"
                     >
                         <FaChevronLeft />
                         <span>Back</span>
@@ -29,41 +34,31 @@ export default function SignUp() {
                                     type="text"
                                     label="First Name"
                                     placeholder="Enter your first name"
-                                    classNames={{
-                                        label: 'text-gray-950 font-semibold',
-                                    }}
+                                    classNames={inputStyles}
                                 />
                                 <Input
                                     type="text"
                                     label="Last Name"
                                     placeholder="Enter your last name"
-                                    classNames={{
-                                        label: 'text-gray-950 font-semibold',
-                                    }}
+                                    classNames={inputStyles}
                                 />
                                 <Input
                                     type="email"
                                     label="Email"
                                     placeholder="Enter your email"
-                                    classNames={{
-                                        label: 'text-gray-950 font-semibold',
-                                    }}
+                                    classNames={inputStyles}
                                 />
                                 <Input
                                     type="password"
                                     label="Password"
                                     placeholder="Enter your password"
-                                    classNames={{
-                                        label: 'text-gray-950 font-semibold',
-                                    }}
+                                    classNames={inputStyles}
                                 />
                                 <Input
                                     type="password"
                                     label="Confirm Password"
                                     placeholder="Enter your password again"
-                                    classNames={{
-                                        label: 'text-gray-950 font-semibold',
-                                    }}
+                                    classNames={inputStyles}
                                 />
                                 <Button
                                     size="lg"
