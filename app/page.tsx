@@ -1,3 +1,6 @@
+import Link from 'next/link';
+import { CgMathPlus } from 'react-icons/cg';
+
 export default function Home() {
     return (
         <div className="min-h-screen flex flex-col">
@@ -16,7 +19,17 @@ export default function Home() {
                 </div>
             </header>
             <main className="py-12 flex-grow flex justify-center bg-gray-100 relative">
-
+                <nav className="w-full h-fit px-4 py-2 flex justify-center absolute bottom-0 border-t lg:hidden">
+                    <ul>
+                        <Link
+                            href="/new"
+                            title="Add task"
+                            className="w-12 h-12 rounded-full font-semibold text-gray-100 bg-lepton-lilac px-3.5 py-1 flex items-center"
+                        >
+                            <CgMathPlus size={20} />
+                        </Link>
+                    </ul>
+                </nav>
             </main>
         </div>
     );
