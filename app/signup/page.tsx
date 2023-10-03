@@ -5,7 +5,7 @@ import { FaChevronLeft } from 'react-icons/fa6';
 import Link from 'next/link';
 
 const inputStyles = {
-    label: 'lg:text-[0.9375rem] text-gray-950 font-semibold',
+    label: 'lg:text-[0.9375rem] lg:py-1.5 text-gray-950 font-semibold',
     input: 'lg:text-medium',
 };
 
@@ -29,7 +29,7 @@ export default function SignUp() {
                             Create your account
                         </h1>
                         <form>
-                            <div className="flex flex-col gap-5">
+                            <div className="flex flex-col gap-5 lg:gap-8">
                                 <div className='flex flex-col gap-4'>
                                     <Input
                                         type="text"
@@ -71,7 +71,7 @@ export default function SignUp() {
                                 </Button>
                             </div>
                         </form>
-                        <div className="text-sm py-4">
+                        <div className="text-sm py-4 lg:py-5">
                             <p className="text-center">
                                 <span>Already have an account? </span>
                                 <Link
