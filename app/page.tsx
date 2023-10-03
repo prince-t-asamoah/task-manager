@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { CgMathPlus } from 'react-icons/cg';
+import { AiOutlineSearch } from 'react-icons/ai';
 
 export default function Home() {
     return (
@@ -10,6 +11,9 @@ export default function Home() {
                         Task Manager
                     </h1>
                     <div className="w-full md:w-8/12 lg:w-6/12 bg-white px-2.5 rounded-md shadow-md flex items-center justify-center relative top-5 z-10">
+                        <span className="flex items-center justify-center w-7 h-7">
+                            <AiOutlineSearch className="text-gray-400 w-full h-full" />
+                        </span>
                         <input
                             type="search"
                             className="text-sm p-1.5 h-[3rem] w-full focus:outline-none placeholder:text-gray-400"
