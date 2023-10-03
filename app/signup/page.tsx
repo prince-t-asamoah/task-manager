@@ -6,8 +6,8 @@ import Link from 'next/link';
 
 export default function SignUp() {
     return (
-        <div className="bg-gray-100 h-screen flex flex-col justify-center items-center">
-            <div className="px-6 py-4 w-full">
+        <div className="bg-gray-100 h-screen flex flex-col gap-4 items-center">
+            <div className="px-5 py-5 w-full">
                 <Link
                     href="/"
                     className="font-semibold text-boson-blue inline-flex items-center gap-2"
@@ -22,7 +22,7 @@ export default function SignUp() {
                         Create your account
                     </h1>
                     <form>
-                        <div className="flex flex-col gap-5">
+                        <div className="flex flex-col gap-4">
                             <Input
                                 type="text"
                                 label="First Name"
@@ -72,6 +72,17 @@ export default function SignUp() {
                             </Button>
                         </div>
                     </form>
+                    <div className="text-sm py-4">
+                        <p className="text-center">
+                            <span>Already have an account? </span>
+                            <Link
+                                href="/login"
+                                className="text-bosson-blue font-semibold underline"
+                            >
+                                Login
+                            </Link>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
