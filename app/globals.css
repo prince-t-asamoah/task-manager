@@ -7,5 +7,5 @@
 html,
 body,
 #root {
-    @apply font-sans text-base h-full;
+    @apply font-sans text-sm md:text-[0.9375rem] h-full;
 }
