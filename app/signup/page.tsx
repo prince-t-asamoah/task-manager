@@ -11,9 +11,9 @@ const inputStyles = {
 
 export default function SignUp() {
     return (
-        <div className="h-screen flex">
+        <div className="min-h-screen bg-gray-100 flex">
             <div className="lg:block flex-1 hidden bg-boson-blue"></div>
-            <div className="flex-1 bg-gray-100 flex flex-col gap-4 lg:gap-8 items-center">
+            <div className="flex-1  flex flex-col gap-4 lg:gap-8 items-center">
                 <div className="p-5 lg:px-10 lg:pt-10 w-full">
                     <Link
                         href="/"
@@ -30,7 +30,7 @@ export default function SignUp() {
                         </h1>
                         <form>
                             <div className="flex flex-col gap-5 lg:gap-8">
-                                <div className='flex flex-col gap-4'>
+                                <div className="flex flex-col gap-4">
                                     <Input
                                         type="text"
                                         label="First Name"
