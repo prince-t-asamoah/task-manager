@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,7 +6,6 @@
 
 html,
 body,
-#root,
-.App {
-    @apply font-sans h-full overflow-auto text-base;
+#root {
+    @apply font-sans text-base h-full overflow-auto;
 }
