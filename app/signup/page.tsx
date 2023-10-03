@@ -25,9 +25,14 @@ export default function SignUp() {
                 </div>
                 <div className="py-4 w-full flex justify-center">
                     <div className="w-4/5 lg:w-3/5">
-                        <h1 className="text-gray-950 text-xl lg:text-3xl font-bold text-center py-5 lg:pb-8">
-                            Create your account
-                        </h1>
+                        <header className="text-center pb-5 lg:pt-3 lg:pb-8">
+                            <h1 className="text-gray-950 text-xl lg:text-3xl font-bold">
+                                Create your account
+                            </h1>
+                            <h2 className="text-sm lg:text-base text-gray-600 py-1">
+                                All fields are required to signup
+                            </h2>
+                        </header>
                         <form>
                             <div className="flex flex-col gap-5 lg:gap-8">
                                 <div className="flex flex-col gap-4">
