@@ -58,6 +58,17 @@ export default function Login() {
                                 </Button>
                             </div>
                         </form>
+                        <div className="text-sm py-4 lg:py-5">
+                            <p className="text-center">
+                                <span>Don&apos;t have an account? </span>
+                                <Link
+                                    href="/signup"
+                                    className="text-bosson-blue font-semibold underline"
+                                >
+                                    Signup
+                                </Link>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
