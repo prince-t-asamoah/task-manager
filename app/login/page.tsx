@@ -27,8 +27,11 @@ export default function Login() {
                     <div className="w-4/5 md:w-3/5">
                         <header className="text-center pb-5 lg:pt-3 lg:pb-8">
                             <h1 className="text-gray-950 text-xl lg:text-3xl font-bold">
-                                Login to access account
+                                Welcome back
                             </h1>
+                            <h2 className="text-sm lg:text-base text-gray-600 py-1">
+                                Login to access account
+                            </h2>
                         </header>
                         <form>
                             <div className="flex flex-col gap-5 lg:gap-8">
