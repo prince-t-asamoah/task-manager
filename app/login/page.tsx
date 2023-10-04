@@ -48,7 +48,7 @@ export default function Login() {
                                     classNames={inputStyles}
                                 />
                             </div>
-                            <div className="text-sm flex justify-between py-4">
+                            <div className="text-sm flex justify-between py-4 md:py-3">
                                 <Checkbox size="sm" defaultSelected>
                                     Remember me
                                 </Checkbox>
@@ -59,15 +59,17 @@ export default function Login() {
                                     Forgot password?
                                 </Link>
                             </div>
-                            <Button
-                                size="lg"
-                                radius="sm"
-                                className="w-full font-semibold bg-boson-blue lg:hover:opacity-70 lg:transition-all text-gray-100"
-                            >
-                                Login
-                            </Button>
+                            <div className="py-2">
+                                <Button
+                                    size="lg"
+                                    radius="sm"
+                                    className="w-full font-semibold bg-boson-blue lg:hover:opacity-70 lg:transition-all text-gray-100"
+                                >
+                                    Login
+                                </Button>
+                            </div>
                         </form>
-                        <div className="text-sm py-5 lg:py-5">
+                        <div className="text-sm py-2 lg:py-5">
                             <p className="text-center">
                                 <span>Don&apos;t have an account? </span>
                                 <Link
