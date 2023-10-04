@@ -1,15 +1,8 @@
-'use client';
-
-import { Button, Input } from '@nextui-org/react';
 import Link from 'next/link';
 import { FaChevronLeft } from 'react-icons/fa6';
 import AuthHeader from '../AuthHeader';
 import AuthFooter from '../AuthFooter';
-
-const inputStyles = {
-    label: 'lg:text-[0.9375rem] lg:py-1.5 text-gray-950 font-semibold',
-    input: 'lg:text-medium',
-};
+import SignupForm from './SignupForm';
 
 export default function SignUp() {
     return (
@@ -31,49 +24,7 @@ export default function SignUp() {
                             title="Create your account"
                             subTitle="All fields are required to signup"
                         />
-                        <form>
-                            <div className="flex flex-col gap-5 lg:gap-8">
-                                <div className="flex flex-col gap-4 md:py-5">
-                                    <Input
-                                        type="text"
-                                        label="First Name"
-                                        placeholder="Enter your first name"
-                                        classNames={inputStyles}
-                                    />
-                                    <Input
-                                        type="text"
-                                        label="Last Name"
-                                        placeholder="Enter your last name"
-                                        classNames={inputStyles}
-                                    />
-                                    <Input
-                                        type="email"
-                                        label="Email"
-                                        placeholder="Enter your email"
-                                        classNames={inputStyles}
-                                    />
-                                    <Input
-                                        type="password"
-                                        label="Password"
-                                        placeholder="Enter your password"
-                                        classNames={inputStyles}
-                                    />
-                                    <Input
-                                        type="password"
-                                        label="Confirm Password"
-                                        placeholder="Enter your password again"
-                                        classNames={inputStyles}
-                                    />
-                                </div>
-                                <Button
-                                    size="lg"
-                                    radius="sm"
-                                    className="font-semibold bg-boson-blue lg:hover:opacity-70 lg:transition-all text-gray-100"
-                                >
-                                    Signup
-                                </Button>
-                            </div>
-                        </form>
+                        <SignupForm />
                         <AuthFooter
                             message="Don't have an account?"
                             linkText="Login"
