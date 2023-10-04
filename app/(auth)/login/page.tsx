@@ -3,6 +3,7 @@
 import { Button, Checkbox, Input } from '@nextui-org/react';
 import Link from 'next/link';
 import { FaChevronLeft } from 'react-icons/fa6';
+import AuthHeader from '../AuthHeader';
 
 const inputStyles = {
     label: 'lg:text-[0.9375rem] lg:py-1.5 text-gray-950 font-semibold',
@@ -25,14 +26,10 @@ export default function Login() {
                 </div>
                 <div className="flex-grow py-4 w-full flex justify-center items-center">
                     <div className="w-4/5 md:w-3/5">
-                        <header className="text-center pb-5 lg:pt-3 lg:pb-8">
-                            <h1 className="text-gray-950 text-xl lg:text-3xl font-bold">
-                                Welcome back
-                            </h1>
-                            <h2 className="text-sm lg:text-base text-gray-600 py-1">
-                                Login to access account
-                            </h2>
-                        </header>
+                        <AuthHeader
+                            title="Welcome back"
+                            subTitle="Login to access account"
+                        />
                         <form>
                             <div className="flex flex-col gap-7 md:py-5">
                                 <Input
