@@ -17,6 +17,15 @@ export default function Login() {
                         <span>Back</span>
                     </Link>
                 </div>
+                <div className="flex-grow py-4 w-full flex justify-center items-center">
+                    <div className="w-4/5 md:w-3/5">
+                        <header className="text-center pb-5 lg:pt-3 lg:pb-8">
+                            <h1 className="text-gray-950 text-xl lg:text-3xl font-bold">
+                                Login to access account
+                            </h1>
+                        </header>
+                    </div>
+                </div>
             </div>
         </div>
     );
