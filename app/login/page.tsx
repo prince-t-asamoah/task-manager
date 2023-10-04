@@ -1,6 +1,6 @@
 'use client';
 
-import { Button, Input } from '@nextui-org/react';
+import { Button, Checkbox, Input } from '@nextui-org/react';
 import Link from 'next/link';
 import { FaChevronLeft } from 'react-icons/fa6';
 
@@ -34,36 +34,45 @@ export default function Login() {
                             </h2>
                         </header>
                         <form>
-                            <div className="flex flex-col gap-5 lg:gap-8">
-                                <div className="flex flex-col gap-4 md:py-5">
-                                    <Input
-                                        type="email"
-                                        label="Email"
-                                        placeholder="Enter your email"
-                                        classNames={inputStyles}
-                                    />
-                                    <Input
-                                        type="password"
-                                        label="Password"
-                                        placeholder="Enter your password"
-                                        classNames={inputStyles}
-                                    />
-                                </div>
-                                <Button
-                                    size="lg"
-                                    radius="sm"
-                                    className="font-semibold bg-boson-blue lg:hover:opacity-70 lg:transition-all text-gray-100"
-                                >
-                                    Login
-                                </Button>
+                            <div className="flex flex-col gap-7 md:py-5">
+                                <Input
+                                    type="email"
+                                    label="Email"
+                                    placeholder="Enter your email"
+                                    classNames={inputStyles}
+                                />
+                                <Input
+                                    type="password"
+                                    label="Password"
+                                    placeholder="Enter your password"
+                                    classNames={inputStyles}
+                                />
                             </div>
+                            <div className="text-sm flex justify-between py-4">
+                                <Checkbox size="sm" defaultSelected>
+                                    Remember me
+                                </Checkbox>
+                                <Link
+                                    href="/forgot-password"
+                                    className="text-boson-blue font-semibold lg:hover:underline"
+                                >
+                                    Forgot password?
+                                </Link>
+                            </div>
+                            <Button
+                                size="lg"
+                                radius="sm"
+                                className="w-full font-semibold bg-boson-blue lg:hover:opacity-70 lg:transition-all text-gray-100"
+                            >
+                                Login
+                            </Button>
                         </form>
-                        <div className="text-sm py-4 lg:py-5">
+                        <div className="text-sm py-5 lg:py-5">
                             <p className="text-center">
                                 <span>Don&apos;t have an account? </span>
                                 <Link
                                     href="/signup"
-                                    className="text-bosson-blue font-semibold underline"
+                                    className="text-boson-blue font-semibold lg:hover:underline"
                                 >
                                     Signup
                                 </Link>
