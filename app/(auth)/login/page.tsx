@@ -1,15 +1,8 @@
-'use client';
-
-import { Button, Checkbox, Input } from '@nextui-org/react';
 import Link from 'next/link';
 import { FaChevronLeft } from 'react-icons/fa6';
 import AuthHeader from '../AuthHeader';
 import AuthFooter from '../AuthFooter';
-
-const inputStyles = {
-    label: 'lg:text-[0.9375rem] lg:py-1.5 text-gray-950 font-semibold',
-    input: 'lg:text-medium',
-};
+import LoginForm from './LoginForm';
 
 export default function Login() {
     return (
@@ -31,42 +24,7 @@ export default function Login() {
                             title="Welcome back"
                             subTitle="Login to access account"
                         />
-                        <form>
-                            <div className="flex flex-col gap-7 md:py-5">
-                                <Input
-                                    type="email"
-                                    label="Email"
-                                    placeholder="Enter your email"
-                                    classNames={inputStyles}
-                                />
-                                <Input
-                                    type="password"
-                                    label="Password"
-                                    placeholder="Enter your password"
-                                    classNames={inputStyles}
-                                />
-                            </div>
-                            <div className="text-sm flex justify-between py-4 md:py-3">
-                                <Checkbox size="sm" defaultSelected>
-                                    Remember me
-                                </Checkbox>
-                                <Link
-                                    href="/forgot-password"
-                                    className="text-boson-blue font-semibold lg:hover:underline"
-                                >
-                                    Forgot password?
-                                </Link>
-                            </div>
-                            <div className="py-2">
-                                <Button
-                                    size="lg"
-                                    radius="sm"
-                                    className="w-full font-semibold bg-boson-blue lg:hover:opacity-70 lg:transition-all text-gray-100"
-                                >
-                                    Login
-                                </Button>
-                            </div>
-                        </form>
+                        <LoginForm />
                         <AuthFooter
                             message="Don't have an account?"
                             linkText="Signup"
