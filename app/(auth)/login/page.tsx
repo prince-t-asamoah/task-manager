@@ -4,6 +4,7 @@ import { Button, Checkbox, Input } from '@nextui-org/react';
 import Link from 'next/link';
 import { FaChevronLeft } from 'react-icons/fa6';
 import AuthHeader from '../AuthHeader';
+import AuthFooter from '../AuthFooter';
 
 const inputStyles = {
     label: 'lg:text-[0.9375rem] lg:py-1.5 text-gray-950 font-semibold',
@@ -66,17 +67,11 @@ export default function Login() {
                                 </Button>
                             </div>
                         </form>
-                        <div className="text-sm py-2 lg:py-5">
-                            <p className="text-center">
-                                <span>Don&apos;t have an account? </span>
-                                <Link
-                                    href="/signup"
-                                    className="text-boson-blue font-semibold lg:hover:underline"
-                                >
-                                    Signup
-                                </Link>
-                            </p>
-                        </div>
+                        <AuthFooter
+                            message="Don't have an account?"
+                            linkText="Signup"
+                            linkPath="/signup"
+                        />
                     </div>
                 </div>
             </div>
